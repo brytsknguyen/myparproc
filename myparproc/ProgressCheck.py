@@ -27,7 +27,7 @@ class ProgressCheck:
             procString = f'Progress: 100%'
         elif(math.floor(self.curr_count/self.total_count*100) != self.progress or self.curr_count == self.total_count - 1):
             self.progress = math.floor(self.curr_count/self.total_count*100)
-            procString = f'Progress: {self.progress:3d}%'
+            procString = f' Progress: {self.progress:3d}%'
 
         if procString != '':
             logging.info(affix + procString)
